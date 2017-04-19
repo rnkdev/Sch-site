@@ -6,6 +6,9 @@
   "repository": "https://github.com/rnkdev/sch-site.git",
   "author": "rnkdev",
   "license": "MIT",
+  "scripts": {
+    "gulp": "gulp"
+  },
   "devDependencies": {
     "babel-core": "^6.24.1",
     "browser-sync": "^2.18.8",
