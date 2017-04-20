@@ -23,6 +23,76 @@ body {
     }
 }
 
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 1.33333;
+}
+
+p {
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+}
+
 .temp-title {
+    display: none
     color: white
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 62rem;
+    min-height: 75vh;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width: 53rem) {
+    .card {
+	flex-direction: row;
+	min-height: 60vh;
+    }
+}
+ 
+.card__contents {
+    display: flex;
+    flex: 1 0 55%;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.card__header, .card__footer {
+    flex: 0 0 auto;
+}
+
+.card__footer {
+    margin-top: 2rem;
+    text-align: right;
+}
+
+.card__title {
+    margin-top: 0;
+}
+
+.card__body {
+    flex: 1 1 auto;
+}
+
+.card__image-container {
+    flex: 0 1 45%;
+    max-height: inherit;
+    background: url('http://i.imgur.com/amnp8rj.jpg') no-repeat center/cover;
+}
+
+@media only screen and (min-width: 53rem) {
+    .card__image-container {
+	max-height: inherit;
+    }
+}
+
+.card__image {
+    opacity: 0;
+    pointer-events: none;
 }
